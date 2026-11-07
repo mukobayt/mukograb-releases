@@ -15,7 +15,7 @@ Kurulumdan sonra MukoGrab güncellemeleri kendisi bulur ve sorar; her güncellem
 
 ## Kullanım şartları
 
-MukoGrab ücretsizdir; kaynak kodu açık değildir. Kurulum dosyasını değiştirmeden paylaşabilirsiniz.
+Ayrıntılar: [Kullanım Sözleşmesi / License Agreement](EULA.md). MukoGrab ücretsizdir; kaynak kodu açık değildir. Kurulum dosyasını değiştirmeden paylaşabilirsiniz.
 İndirdiğiniz içeriğin ve kullanımının sorumluluğu size aittir. Kullandığı açık kaynak bileşenlerin
 lisansları programın "Hakkında" bölümünde yer alır.
 
