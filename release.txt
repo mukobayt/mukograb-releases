@@ -1,0 +1,7 @@
+v1.0.0-b74
+MukoGrab 1.0.0 (derleme 74)
+MukoGrab İndirme Yöneticisi 1.0.0 (derleme 74) — Windows 10/11.
+
+- Chrome açılırken geçmişteki eski indirmeler artık MukoGrab'a gönderilmiyor.
+- Aynı anda birkaç indirme gelirse kutular üst üste açılmıyor, sırayla geliyor.
+- Erişime kapalı sitelerde anlaşılmaz İngilizce hata yerine açıklayıcı uyarı çıkıyor.

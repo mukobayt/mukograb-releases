@@ -1,0 +1,35 @@
+name: Sürüm yayınla
+
+# "incoming" dalına yeni kurulum gönderilince sürümü oluşturur (SHA-256 doğrulama dosyasıyla).
+on:
+  push:
+    branches: [incoming]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: incoming
+      - name: Yayınla
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=$(head -1 release.txt)
+          TITLE=$(sed -n 2p release.txt)
+          tail -n +3 release.txt > notes.md
+          sha256sum MukoGrab-Setup.exe | awk '{print $1"  MukoGrab-Setup.exe"}' > MukoGrab-Setup.exe.sha256
+          cat MukoGrab-Setup.exe.sha256
+          # latest.json: uygulama güncellemeyi buradan okur (API sorgu sınırına takılmaz)
+          jq -n --arg tag "$TAG" --rawfile notes notes.md '{tag:$tag, notes:$notes}' > latest.json
+          cat latest.json
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "zaten var: $TAG — yalnızca latest.json eklenir"
+            gh release upload "$TAG" latest.json --clobber
+            exit 0
+          fi
+          gh release create "$TAG" MukoGrab-Setup.exe MukoGrab-Setup.exe.sha256 latest.json --title "$TITLE" --notes-file notes.md --target main --latest
