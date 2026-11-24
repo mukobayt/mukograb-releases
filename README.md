@@ -1,6 +1,6 @@
 # MukoGrab İndirme Yöneticisi
 
-**Windows 10/11 için hızlı, ücretsiz ve reklamsız indirme yöneticisi — Dev. MUKO**
+**Windows 10/11 için hızlı, ücretsiz ve reklamsız indirme yöneticisi — by Dev. MUKO**
 
 İndirmeleriniz yarıda kesilmesin, yavaş ilerlemesin, videoyu kaydetmek için siteden siteye dolaşmayın. MukoGrab dosyaları, videoları ve torrentleri tek bir sade pencereden, olabilecek en hızlı şekilde indirir. Kurulumu bir dakika sürer; sonrasında tarayıcınızla birlikte arka planda sessizce çalışır ve ihtiyacınız olduğunda hazırdır.
 
