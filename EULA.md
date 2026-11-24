@@ -37,7 +37,7 @@ Program, yeni sürüm olup olmadığını düzenli aralıklarla internetten (Git
 
 **8. Gizlilik**
 a) Program kişisel veri toplamaz, reklam göstermez, kullanım istatistiği göndermez.
-b) Program yalnızca şu bağlantıları kurar: Kullanıcının başlattığı indirmeler; güncelleme denetimi için GitHub; video indirme bileşenleri (yt-dlp, FFmpeg, Deno) ilk kullanımda ve güncellenirken bu projelerin resmi indirme adresleri; torrent indirmelerinde diğer eşler ve izleyiciler (tracker).
+b) Program yalnızca şu bağlantıları kurar: Kullanıcının başlattığı indirmeler; güncelleme denetimi için GitHub; video indirme bileşenleri (yt-dlp, FFmpeg, Deno) ilk kullanımda ve güncellenirken bu projelerin resmi indirme adresleri; torrent indirmelerinde diğer eşler, izleyiciler (tracker) ve DHT ağı.
 c) Torrent kullanırken IP adresiniz, protokol gereği bağlandığınız diğer kullanıcılar tarafından görülebilir.
 d) İndirme listesi, ayarlar ve hata kayıtları yalnızca Kullanıcının bilgisayarında tutulur. Hata kayıtları, Kullanıcı kendisi göndermedikçe hiçbir yere gönderilmez.
 e) Tarayıcı eklentisi, yalnızca indirme ve video yakalama için gereken bilgileri (adres, sayfa başlığı, indirme için gereken çerezler) bilgisayardaki MukoGrab'a iletir; başka hiçbir yere göndermez.
@@ -49,7 +49,7 @@ Program, kendi lisanslarına tabi açık kaynak bileşenler içerir veya kullan�
 Program, ücretsiz olarak ve "olduğu gibi" sunulur. Geliştirici; Programın hatasız, kesintisiz çalışacağına, her siteden indirme yapabileceğine veya belirli bir amaca uygun olduğuna dair, açık ya da örtülü hiçbir garanti vermez. Yürürlükteki yasaların izin verdiği en geniş ölçüde tüm garantiler kapsam dışıdır.
 
 **11. Sorumluluğun sınırı**
-Yürürlükteki yasaların izin verdiği en geniş ölçüde Geliştirici; Programın kullanımından veya kullanılamamasından doğan veri kaybı, bozulan veya eksik dosya, kâr kaybı, cihaz arızası ve benzeri doğrudan veya dolaylı zararlardan sorumlu tutulamaz. Yasaların sorumluluğun sınırlanmasına izin vermediği hallerde sorumluluk, yasanın izin verdiği en düşük düzeyle sınırlıdır.
+Yürürlükteki yasaların izin verdiği en geniş ölçüde Geliştirici; Programın kullanımından veya kullanılamamasından doğan veri kaybı, bozulan veya eksik dosya, kâr kaybı, cihaz arızası ve benzeri doğrudan veya dolaylı zararlardan sorumlu tutulamaz. Yasaların sorumluluğun sınırlanmasına izin vermediği hallerde sorumluluk, yasanın izin verdiği en düşük düzeyle sınırlıdır. Geliştiricinin kastı veya ağır ihmali halinde yasal sorumluluğu saklıdır.
 
 **12. Tazmin**
 Kullanıcı, Programı bu sözleşmeye veya yasalara aykırı kullanması nedeniyle (özellikle izinsiz indirilen veya paylaşılan içerikler yüzünden) Geliştirici'ye karşı ileri sürülen taleplerden doğan zararları karşılamayı kabul eder.
@@ -64,7 +64,7 @@ Geliştirici bu sözleşmeyi değiştirebilir. Yeni sürüm, Programın bir sonr
 Bu sözleşmenin herhangi bir maddesi geçersiz sayılırsa, diğer maddeler geçerliliğini korur.
 
 **16. Uygulanacak hukuk ve yetkili mahkeme**
-Bu sözleşmeye Türkiye Cumhuriyeti kanunları uygulanır. Uyuşmazlıklarda Van mahkemeleri ve icra daireleri yetkilidir. Tüketici olarak yasaların size tanıdığı haklar saklıdır.
+Bu sözleşmeye Türkiye Cumhuriyeti kanunları uygulanır. Uyuşmazlıklarda Türkiye Cumhuriyeti mahkemeleri ve icra daireleri yetkilidir. Tüketici uyuşmazlıklarında 6502 sayılı Tüketicinin Korunması Hakkında Kanun uyarınca tüketici hakem heyetleri ve tüketici mahkemeleri yetkilidir. Tüketici olarak yasaların size tanıdığı haklar saklıdır.
 
 **17. İletişim**
 Sorular ve bildirimler için: https://github.com/mukobayt/mukograb-releases/issues
@@ -90,13 +90,13 @@ Version 1 — November 2026
 
 **7. Updates.** The Software periodically checks the internet (GitHub) for a new version and asks you before installing it. An update is downloaded and installed only if you approve, and its integrity is verified (SHA-256) before installation. Updates are subject to this agreement; if there is a new version of the agreement, you may be asked to accept it again during the update.
 
-**8. Privacy.** (a) The Software does not collect personal data, show ads or send usage statistics. (b) The Software only connects to: the downloads you start; GitHub, to check for updates; the official download addresses of the video components (yt-dlp, FFmpeg, Deno), on first use and when they are updated; and, for torrent downloads, other peers and trackers. (c) When you use BitTorrent, your IP address can be seen by the other users you connect to; this is how the protocol works. (d) Your download list, settings and error logs are stored only on your computer, and error logs are not sent anywhere unless you send them yourself. (e) The browser extension sends only the information needed for downloading and video capture (address, page title, cookies needed for the download) to MukoGrab on your own computer, and nowhere else.
+**8. Privacy.** (a) The Software does not collect personal data, show ads or send usage statistics. (b) The Software only connects to: the downloads you start; GitHub, to check for updates; the official download addresses of the video components (yt-dlp, FFmpeg, Deno), on first use and when they are updated; and, for torrent downloads, other peers, trackers and the DHT network. (c) When you use BitTorrent, your IP address can be seen by the other users you connect to; this is how the protocol works. (d) Your download list, settings and error logs are stored only on your computer, and error logs are not sent anywhere unless you send them yourself. (e) The browser extension sends only the information needed for downloading and video capture (address, page title, cookies needed for the download) to MukoGrab on your own computer, and nowhere else.
 
 **9. Third-party components and websites.** The Software contains or uses open-source components that are subject to their own licenses (e.g. anacrolix/torrent — MPL 2.0; yt-dlp; FFmpeg — LGPL). The list of these components and their license texts is in the Software's "About" section; for those components, their licenses take precedence over this agreement. The Developer is not responsible for the content or operation of websites accessed through the Software.
 
 **10. No warranty.** The Software is provided free of charge and "as is". The Developer gives no warranty of any kind, express or implied, that the Software will work without errors or interruptions, will be able to download from every website, or will be fit for a particular purpose. To the maximum extent permitted by applicable law, all warranties are excluded.
 
-**11. Limitation of liability.** To the maximum extent permitted by applicable law, the Developer is not liable for any direct or indirect damage arising from the use of, or inability to use, the Software, including data loss, corrupted or incomplete files, lost profits or device failure. Where the law does not allow liability to be limited, it is limited to the lowest level the law permits.
+**11. Limitation of liability.** To the maximum extent permitted by applicable law, the Developer is not liable for any direct or indirect damage arising from the use of, or inability to use, the Software, including data loss, corrupted or incomplete files, lost profits or device failure. Where the law does not allow liability to be limited, it is limited to the lowest level the law permits. This does not limit the Developer's liability for intent or gross negligence as provided by law.
 
 **12. Indemnity.** You agree to cover any damage arising from claims made against the Developer because you used the Software in breach of this agreement or the law, in particular because of content you downloaded or shared without permission.
 
@@ -106,6 +106,6 @@ Version 1 — November 2026
 
 **15. Severability.** If any section of this agreement is held invalid, the remaining sections stay in effect.
 
-**16. Governing law and jurisdiction.** This agreement is governed by the laws of the Republic of Türkiye. The courts and enforcement offices of Van have jurisdiction over disputes. Any rights you have as a consumer under applicable law are not affected.
+**16. Governing law and jurisdiction.** This agreement is governed by the laws of the Republic of Türkiye. The courts and enforcement offices of the Republic of Türkiye have jurisdiction over disputes. For consumer disputes, consumer arbitration committees and consumer courts have jurisdiction under Turkish Consumer Protection Law No. 6502. Any rights you have as a consumer under applicable law are not affected.
 
 **17. Contact.** For questions and notices: https://github.com/mukobayt/mukograb-releases/issues
